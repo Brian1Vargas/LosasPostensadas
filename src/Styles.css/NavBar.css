@@ -1,0 +1,226 @@
+
+.navbar {
+    background-color: black;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: relative; 
+}
+
+.navbar-logo {
+    width: 125px; 
+    height: 135px;
+    border-radius: 50%;
+    overflow: hidden; 
+}
+
+.nav-links:focus {
+    outline: none; 
+    background: none; 
+}
+
+.nav-links{
+    cursor: pointer;
+}
+.logo-img {
+    width: 100%; 
+    height: auto;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0; 
+}
+
+.navbar ul li {
+    margin: 0 10px;
+    position: relative; 
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: 29px 1rem;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li:hover > ul {
+    display: block;
+}
+
+.navbar ul ul {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 82px;
+    background-color: rgb(10, 189, 189);
+    min-width: 160px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.navbar ul ul li {
+    width: 100%;
+    white-space: nowrap; 
+}
+
+.navbar ul ul li a {
+    padding: 10px;
+    display: block;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+.navbar-logo {
+    color: #fff;
+    justify-self: flex-start;
+    cursor: pointer;
+}
+
+.navbar-logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.nav-links:hover {
+    color: gray;
+}
+
+
+.burger {
+    display: none;
+}
+
+
+
+
+@media screen and (max-width: 960px) {
+
+
+    .nav-links {
+        
+        background: none; 
+        box-shadow: none; 
+        touch-action: manipulation; 
+        -webkit-tap-highlight-color: transparent; 
+      }
+    
+     
+      .burger input:focus,
+      .burger input:active {
+        outline: none; 
+        touch-action: manipulation; 
+        -webkit-tap-highlight-color: transparent; 
+      }
+
+    .navbar-container ul {
+        display: none;
+    }
+
+    .burger {
+        display: block; 
+        position: absolute;
+        top: 12px;
+        right: 20px;
+        width: 40px;
+        height: 30px;
+        background: transparent;
+        cursor: pointer;
+        z-index: 1500; 
+    }
+
+    .burger input {
+        display: none; 
+    }
+
+    .burger span {
+        display: block;
+        position: absolute;
+        height: 4px;
+        width: 100%;
+        background: white;
+        border-radius: 9px;
+        opacity: 1;
+        left: 0;
+        transform: rotate(0deg);
+        transition: .25s ease-in-out;
+    }
+
+    .burger span:nth-of-type(1) {
+        top: 0px;
+        transform-origin: left center;
+    }
+
+    .burger span:nth-of-type(2) {
+        top: 50%;
+        transform: translateY(-50%);
+        transform-origin: left center;
+    }
+
+    .burger span:nth-of-type(3) {
+        top: 100%;
+        transform-origin: left center;
+        transform: translateY(-100%);
+    }
+
+    .burger input:checked ~ span:nth-of-type(1) {
+        transform: rotate(45deg);
+        top: 0px;
+        left: 5px;
+    }
+
+    .burger input:checked ~ span:nth-of-type(2) {
+        width: 0%;
+        opacity: 0;
+    }
+
+    .burger input:checked ~ span:nth-of-type(3) {
+        transform: rotate(-45deg);
+        top: 28px;
+        left: 5px;
+    }
+
+    
+    .navbar ul.active {
+        display: flex;
+        flex-direction: column; 
+        position: absolute;
+        top: 80px; 
+        left: 0;
+        width: 100%;
+        background-color: black;
+        transition: all 0.3s ease;
+        z-index: 1000; 
+    }
+
+  
+    .navbar ul.active ul {
+        display: block;
+        position: relative;
+        background-color: rgb(10, 189, 189);
+        box-shadow: none;
+        min-width: 0;
+        top: -10px;
+    }
+
+    .navbar ul.active ul li {
+        width: 100%;
+    }
+
+    .navbar ul.active ul li a {
+        padding: 10px;
+    }
+}
