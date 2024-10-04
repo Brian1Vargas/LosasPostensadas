@@ -19,6 +19,12 @@ const Configuracion = () => {
   const [error, setError] = useState("");
   const [success, setSuccess] = useState("");
 
+
+
+  const CerrarSesion = () =>{
+    navigate("/");
+  }
+
   const handlePasswordChange = (e) => {
     e.preventDefault();
     if (currentPassword !== storedPassword) {
@@ -56,6 +62,9 @@ const Configuracion = () => {
       </div>
       <button className="change-password-button" onClick={() => setShowChangePassword(!showChangePassword)}>
         {showChangePassword ? "Cancelar cambio de contraseña" : "Cambiar contraseña"}
+      </button>
+      <button className="change-password-button"  onClick={()=>CerrarSesion()} >
+      Cerrar Sesión
       </button>
       {showChangePassword && (
         <form className="password-form" onSubmit={handlePasswordChange}>

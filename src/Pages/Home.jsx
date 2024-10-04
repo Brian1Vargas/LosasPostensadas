@@ -17,9 +17,7 @@ export default function Home() {
           <p>
             Utilizando esta herramienta, podrás llevar a cabo inspecciones
             detalladas, registrar observaciones y generar reportes de manera
-            eficiente. La aplicación está diseñada para ser intuitiva y fácil de
-            usar, asegurando que puedas concentrarte en el análisis y evaluación
-            sin complicaciones técnicas.
+            eficiente.
           </p>
        
         </div>

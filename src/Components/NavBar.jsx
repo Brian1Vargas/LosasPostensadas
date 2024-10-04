@@ -108,7 +108,7 @@ function NavBar() {
           </li>
           <li className="nav-item">
             <a href="/Configuracion" className="nav-links" onClick={toggleMenu}>
-              Configuracion
+              Configuración
             </a>
           </li>
         </ul>

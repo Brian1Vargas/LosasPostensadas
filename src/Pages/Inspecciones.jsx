@@ -1,11 +1,10 @@
 // src/Components/Inspeccion.js
 import { useState } from "react";
-import { useParams, useNavigate, useSearchParams } from "react-router-dom";
+import { useParams,useSearchParams } from "react-router-dom";
 import NavBar from "../Components/NavBar";
 
 export default function Inspeccion() {
   const { index } = useParams();
-  const navigate = useNavigate();
   const [searchParams] = useSearchParams();
   const type = searchParams.get("type");
 
@@ -174,10 +173,10 @@ export default function Inspeccion() {
                     1.1 ¿Los elementos de soporte se encuentran en correcto
                     estado?
                   </label>
-                  <p>Critero de aceptacion:</p>
+                  <p>Criterio de aceptación:</p>
                   <p className="blueCriterio">
                     Los elementos se encuentran en perfecto funcionamiento, sin
-                    oxido y con todas las piezas completas y sin fallas.{" "}
+                    óxido y con todas las piezas completas y sin fallas.{" "}
                   </p>
                   <select
                     type="radio"
@@ -205,7 +204,7 @@ export default function Inspeccion() {
                     1.2 ¿Los puntales o andamios de carga se encuentran
                     colocados correctamente?
                   </label>
-                  <p>Critero de aceptacion:</p>
+                  <p>Criterio de aceptación:</p>
                   <p className="blueCriterio">
                     Se encuentran ubicados de acuerdo con el plano de taller o
                     según especificaciones dadas por el diseñador o ingeniero
@@ -236,11 +235,11 @@ export default function Inspeccion() {
                     1.3 ¿Se tiene una adecuada superficie para colocar los
                     puntales o andamios de carga garantizando su estabilidad?
                   </label>
-                  <p>Critero de aceptacion:</p>
+                  <p>Criterio de aceptación:</p>
                   <p className="blueCriterio">
                     Superficies sin desniveles que puedan provocar el
                     deslizamiento de puntales, así como resistentes y que
-                    permitan soportar la carga de la loza sin riesgo a fallar.
+                    permitan soportar la carga de la losa sin riesgo a fallar.
                   </p>
                   <select
                     name="superficieAdecuada"
@@ -260,7 +259,7 @@ export default function Inspeccion() {
                   <label>
                     1.4 ¿La formaleta de fondo se encuentra en correcto estado?
                   </label>
-                  <p>Critero de aceptacion:</p>
+                  <p>Criterio de aceptación:</p>
                   <p className="blueCriterio">
                     Los paneles no presentan grietas o desperfectos que afecten
                     la integridad de la losa y puedan llegar a presentar un
@@ -285,7 +284,7 @@ export default function Inspeccion() {
                     1.5 ¿La formaleta de fondo se encuentra debidamente apoyada
                     sobre la estructura de soporte?
                   </label>
-                  <p>Critero de aceptacion:</p>
+                  <p>Criterio de aceptación:</p>
                   <p className="blueCriterio">
                     No hay presencia de paneles de formaleta sin apoyarse sobre
                     puntales o andamios de carga con sus debidas vigas.
@@ -306,9 +305,9 @@ export default function Inspeccion() {
                 </div>
                 <div className="form-group">
                   <label>1.6 ¿Se encuentra bien ubicada la formaleta?</label>
-                  <p>Critero de aceptacion:</p>
+                  <p>Criterio de aceptación:</p>
                   <p className="blueCriterio">
-                    La ubicación de los paneles así las dimensiones de la
+                    La ubicación de los paneles y así las dimensiones de la
                     formaleta de fondo se ajustan a lo indicado en los planos y
                     a las especificaciones del diseñador.
                   </p>
@@ -334,7 +333,7 @@ export default function Inspeccion() {
                   <label>
                     2.1 ¿Es correcta la cantidad y dimensiones de tendones?
                   </label>
-                  <p>Critero de aceptacion:</p>
+                  <p>Criterio de aceptación:</p>
 
                   <p className="blueCriterio">
                     {" "}
@@ -361,7 +360,7 @@ export default function Inspeccion() {
                     2.2 ¿Se tienen las fichas técnicas de los elementos de
                     postensado a utilizar?
                   </label>
-                  <p>Critero de aceptacion:</p>
+                  <p>Criterio de aceptación:</p>
                   <p className="blueCriterio">
                     Tener la información técnica del fabricante de cada uno de
                     los elementos que se van a utilizar en el sistema de
@@ -386,9 +385,9 @@ export default function Inspeccion() {
                     2.3 ¿Se tiene un correcto almacenamiento y en buen estado
                     los cables de los tendones?
                   </label>
-                  <p>Critero de aceptacion:</p>
+                  <p>Criterio de aceptación:</p>
                   <p className="blueCriterio">
-                    No existen datos de corrosión o deformaciones.
+                    No existe evidencia de corrosión o deformaciones.
                   </p>
                   <select
                     name="tendonesAlmacenados"
@@ -409,7 +408,7 @@ export default function Inspeccion() {
                     2.4 ¿Se encuentran correctamente almacenados y en buen
                     estado los ductos para los cables de los tendones?
                   </label>
-                  <p>Critero de aceptacion:</p>
+                  <p>Criterio de aceptación:</p>
                   <p className="blueCriterio">
                     No presentar deformaciones o daños.
                   </p>
@@ -433,9 +432,9 @@ export default function Inspeccion() {
                     2.5 ¿Se tiene en correcto almacenamiento y buen estado los
                     elementos de anclaje?
                   </label>
-                  <p>Critero de aceptacion:</p>
+                  <p>Criterio de aceptación:</p>
                   <p className="blueCriterio">
-                  No presentan golpes, oxido, suciedad o algún tipo de daño. 
+                  No presentan golpes, óxido, suciedad o algún tipo de daño. 
                   </p>
                   <select
                     name="anclajesEstado"
@@ -458,10 +457,10 @@ export default function Inspeccion() {
                     para los tendones?
 
                   </label>
-                  <p>Critero de aceptacion:</p>
+                  <p>Criterio de aceptación:</p>
                   <p className="blueCriterio">
                     Se encuentran ubicados según las indicaciones del diseño,
-                    para impartir las fuerzas de tensadoo deseadas. Permitiendo
+                    para impartir las fuerzas de tensado deseadas. Permitiendo
                     una desviación máxima de 12 pulg (305mm) según lo indica el
                     PTI.
                   </p>
@@ -486,7 +485,7 @@ export default function Inspeccion() {
                     ductos de los tendones?
                   </label>
 
-                  <p>Critero de aceptacion:</p>
+                  <p>Criterio de aceptación:</p>
 
                   <p className="blueCriterio">
                     Se cumple con la cantidad correcta de cables dentro de los
@@ -513,7 +512,7 @@ export default function Inspeccion() {
                     posterior colocación de la lechada?
                   </label>
 
-                  <p>Critero de aceptacion:</p>
+                  <p>Criterio de aceptación:</p>
 
                   <p className="blueCriterio">
                     Se realizaron las perforaciones de cada uno de los ductos
@@ -541,7 +540,7 @@ export default function Inspeccion() {
                   <label>
                     3.1 ¿El método de colocación del concreto es el adecuado?
                   </label>
-                  <p>Critero de aceptacion:</p>
+                  <p>Criterio de aceptación:</p>
                   <p className="blueCriterio">Se tiene claro el método de colocación de concreto (con bomba, con grúa, etc) que previamente ha sido aprobado por el diseñador y garantizando que no provoque daño la ubicación de los tendones, por ejemplo, indicando la ubicación de vaciado del balde de la grúa. </p>
                   <select
                     name="metodoColocacionConcreto"
@@ -559,7 +558,7 @@ export default function Inspeccion() {
                 </div>
                 <div className="form-group">
                   <label>3.2 ¿El encofrado está adecuadamente lubricado?</label>
-                  <p>Critero de aceptacion:</p>
+                  <p>Criterio de aceptación:</p>
                   <p className="blueCriterio">Se le aplicó desmoldante a los paneles de encofrado para su posterior desprendimiento de la losa. </p>
                   <select
                     name="encofradoLubricado"
@@ -577,7 +576,7 @@ export default function Inspeccion() {
                 </div>
                 <div className="form-group">
                   <label>3.3 ¿El concreto utilizado es el correcto?</label>
-                  <p>Critero de aceptacion:</p>
+                  <p>Criterio de aceptación:</p>
                   <p className="blueCriterio">Sin presencia de cloruro de calcio u otros aditivos que generen efectos negativos sobre el acero. </p>
                   <select
                     name="concretoUtilizado"
@@ -598,7 +597,7 @@ export default function Inspeccion() {
                     3.4 ¿Se está utilizando el equipo vibrador de manera
                     adecuada?
                   </label>
-                  <p>Critero de aceptacion:</p>
+                  <p>Criterio de aceptación:</p>
                   <p className="blueCriterio">Garantizar que se tenga un mínimo de dos vibradores de concreto, así como el equipo necesario para la debida colocación de este. </p>
                   <select
                     name="equipoVibrador"
@@ -616,8 +615,8 @@ export default function Inspeccion() {
                 </div>
                 <div className="form-group">
                   <label>3.5 ¿El vibrador utilizado es el adecuado?</label>
-                  <p>Critero de aceptacion:</p>
-                  <p className="blueCriterio">Se utilizó el vibrador a lo largo de toda la losa, evitando que este entre en contacto con los tendones o con el acero de refuerzo cuando se tiene. </p>
+                  <p>Criterio de aceptación:</p>
+                  <p className="blueCriterio">Se utilizó el vibrador a lo largo de toda la losa, evitando que este entre en contacto con los tendones o con el acero de refuerzo. </p>
                   <select
                     name="vibradorUtilizado"
                     value={inspeccion.items.vibradorUtilizado}
@@ -639,7 +638,7 @@ export default function Inspeccion() {
                     4.1 ¿Se alcanzó la resistencia del concreto
                     especificada,antes de iniciar el tensado?
                   </label>
-                  <p>Critero de aceptacion:</p>
+                  <p>Criterio de aceptación:</p>
                   <p className="blueCriterio">No comenzar hasta que el concreto haya alcanzado la resistencia adecuada según las especificaciones del diseño (Generalmente alrededor de 3000psi). Comprobable mediante pruebas de laboratorio. </p>
                   <select
                     name="revestimientoExtremos"
@@ -660,7 +659,7 @@ export default function Inspeccion() {
                     4.2 ¿El equipo de tensado se encuentra correctamente
                     calibrado?
                   </label>
-                  <p>Critero de aceptacion:</p>
+                  <p>Criterio de aceptación:</p>
                   <p className="blueCriterio">Se encuentra correctamente calibrado según sus especificaciones. </p>
                   <select
                     name="refuerzosCortante"
@@ -678,8 +677,8 @@ export default function Inspeccion() {
                 </div>
                 <div className="form-group">
                   <label>4.3 ¿Las cuñas a utilizar están en buen estado?</label>
-                  <p>Critero de aceptacion:</p>
-                  <p className="blueCriterio">Se utilizan cuñas nuevas, sin deformaciones en los dientes, sin oxido y con calidad homogénea. </p>
+                  <p>Criterio de aceptación:</p>
+                  <p className="blueCriterio">Se utilizan cuñas nuevas, sin deformaciones en los dientes, sin óxido y con calidad homogénea. </p>
                   <select
                     name="equipoTensadoEspacio"
                     value={inspeccion.items.equipoTensadoEspacio}
@@ -696,8 +695,8 @@ export default function Inspeccion() {
                 </div>
                 <div className="form-group">
                   <label>4.4 ¿Se tienen las marcas de elongación?</label>
-                  <p>Critero de aceptacion:</p>
-                  <p className="blueCriterio">Se pintaron las marcas de la elongación que se debe realizar, en cada uno de los extremos de los tendones de la losa</p>
+                  <p>Criterio de aceptación:</p>
+                  <p className="blueCriterio">Se pintaron las marcas de la elongación que se debe realizar, en cada uno de los extremos de los tendones de la losa.</p>
                   <select
                     name="tendonesRevestimiento"
                     value={inspeccion.items.tendonesRevestimiento}
@@ -716,7 +715,7 @@ export default function Inspeccion() {
                   <label>
                     4.5 ¿Se tiene visto bueno de la secuencia de tensado?
                   </label>
-                  <p>Critero de aceptacion:</p>
+                  <p>Criterio de aceptación:</p>
                   <p className="blueCriterio">El ingeniero estructural a cargo revisó y aprobó la secuencia de tensado. </p>
                   <select
                     name="anticorrosivoExtremo"
@@ -738,7 +737,7 @@ export default function Inspeccion() {
                     4.6 ¿Se cumple con la elongación requerida para los tendones
                     después de tensado?
                   </label>
-                  <p>Critero de aceptacion:</p>
+                  <p>Criterio de aceptación:</p>
 
                   <p className="blueCriterio">
                     Según diseño, midiendo a 1/8 de pulgada más cercano,
@@ -765,7 +764,7 @@ export default function Inspeccion() {
                   <label>
                     4.7 ¿Se tiene el ducto somplado antes de colocar la lechada?
                   </label>
-                  <p>Critero de aceptacion:</p>
+                  <p>Criterio de aceptación:</p>
 
                   <p className="blueCriterio">
                     Se realizó un soplado a los ductos antes de inyectar la
@@ -792,7 +791,7 @@ export default function Inspeccion() {
                   <label>
                     4.8 ¿Se prepara correctamente la lechada de cemento?
                   </label>
-                  <p>Critero de aceptacion:</p>
+                  <p>Criterio de aceptación:</p>
                   <p className="blueCriterio">
                     La mezcla de la lechada cumple con las especificaciones de
                     resistencia y fluidez solicitadas en el diseño.
@@ -814,13 +813,13 @@ export default function Inspeccion() {
 
                 <div className="form-group">
                   <label>4.9 ¿Se inyecta correctamente la lechada?</label>
-                  <p>Critero de aceptacion:</p>
+                  <p>Criterio de aceptación:</p>
 
                   <p className="blueCriterio">
                     Se inyecta de manera correcta la lechada de cemento dentro
                     de los ductos con los cables ya tensados y un plazo no menor
                     a 7 dias posteriores al tensado, utilizando bombas y
-                    mezclaores certificadas para este proceso.
+                    mezcladores certificados para este proceso.
                   </p>
                   <select
                     name="inyeccionlechada"
@@ -902,9 +901,9 @@ export default function Inspeccion() {
                     1.1 ¿Los elementos de soporte se encuentran en correcto
                     estado?
                   </label>
-                  <p>Critero de aceptacion:</p>
+                  <p>Criterio de aceptación:</p>
                   <p className="blueCriterio">
-                  Los elementos se encuentran en perfecto funcionamiento, sin oxido y con todas las piezas completas y sin fallas.   
+                  Los elementos se encuentran en perfecto funcionamiento, sin óxido y con todas las piezas completas y sin fallas.   
                   </p>
                   <select
                     type="radio"
@@ -932,7 +931,7 @@ export default function Inspeccion() {
                     1.2 ¿Los puntales o andamios de carga se encuentran
                     colocados correctamente?
                   </label>
-                  <p>Critero de aceptacion:</p>
+                  <p>Criterio de aceptación:</p>
                   <p className="blueCriterio">
                   Se encuentran ubicados de acuerdo a plano de taller o según especificaciones dadas por el diseñador o ingeniero responsable del sistema postensado. 
                   </p>
@@ -961,9 +960,9 @@ export default function Inspeccion() {
                     1.3 ¿Se tiene una adecuada superficie para colocar los
                     puntales o andamios de carga garantizando su estabilidad?
                   </label>
-                  <p>Critero de aceptacion:</p>
+                  <p>Criterio de aceptación:</p>
                   <p className="blueCriterio">
-                  Superficies sin desniveles que puedan provocar el deslizamiento de puntales, así como resistentes y que permitan soportar la carga de la loza sin riesgo a fallar.  
+                  Superficies sin desniveles que puedan provocar el deslizamiento de puntales, así como resistentes y que permitan soportar la carga de la losa sin riesgo a fallar.  
                   </p>
                   <select
                     name="superficieAdecuada"
@@ -983,9 +982,9 @@ export default function Inspeccion() {
                   <label>
                     1.4 ¿La formaleta de fondo se encuentra en correcto estado?
                   </label>
-                  <p>Critero de aceptacion:</p>
+                  <p>Criterio de aceptación:</p>
                   <p className="blueCriterio">
-                  Los páneles no presentan reventaduras o desperfectos que afecten la integridad de la losa y puedan llegar a presentar un riesgo para la misma. 
+                  Los paneles no presentan reventaduras o desperfectos que afecten la integridad de la losa y puedan llegar a presentar un riesgo para la misma. 
                   </p>
                   <select
                     name="formaletaEstado"
@@ -1006,9 +1005,9 @@ export default function Inspeccion() {
                     1.5 ¿La formaleta de fondo se encuentra debidamente apoyada
                     sobre la estructura de soporte?
                   </label>
-                  <p>Critero de aceptacion:</p>
+                  <p>Criterio de aceptación:</p>
                   <p className="blueCriterio">
-                  No hay precensia de páneles de formaleta sin apoyarse sobre puntales o andamios de carga con sus debidas vigas. 
+                  No hay presencia de páneles de formaleta sin apoyarse sobre puntales o andamios de carga con sus debidas vigas. 
                   </p>
                   <select
                     name="formaletaApoyada"
@@ -1018,7 +1017,7 @@ export default function Inspeccion() {
                   >
                     <option value="" disabled>
                       Seleccione una opción:
-                    </option>
+                    </option>2
                     <option value="Cumple">Cumple</option>
                     <option value="No cumple">No cumple</option>
                     <option value="N/A">N/A</option>
@@ -1026,9 +1025,9 @@ export default function Inspeccion() {
                 </div>
                 <div className="form-group">
                   <label>1.6 ¿Se encuentra bien ubicada la formaleta?</label>
-                  <p>Critero de aceptacion:</p>
+                  <p>Criterio de aceptación:</p>
                   <p className="blueCriterio">
-                  La ubicación de los páneles así las dimensiones de la formaleta de fondo se ajustan a lo indicado en los planos y a las especificaciones del diseñador.  
+                  La ubicación de los páneles y así las dimensiones de la formaleta de fondo se ajustan a lo indicado en los planos y a las especificaciones del diseñador.  
                   </p>
                   <select
                     name="formaletaUbicada"
@@ -1052,7 +1051,7 @@ export default function Inspeccion() {
                   <label>
                     2.1 ¿Es correcta la cantidad y dimensiones de tendones?
                   </label>
-                  <p>Critero de aceptacion:</p>
+                  <p>Criterio de aceptación:</p>
                   <p className="blueCriterio">
                   Tener o estar por recibir en proyecto la cantidad de tendones con las dimensiones según se requiere de acuerdo a lo indicado en planos. 
                   </p>
@@ -1075,7 +1074,7 @@ export default function Inspeccion() {
                     2.2 ¿Se tienen las fichas técnicas de los elementos de
                     postensado a utilizar?
                   </label>
-                  <p>Critero de aceptacion:</p>
+                  <p>Criterio de aceptación:</p>
                   <p className="blueCriterio">
                   Tener la información tecnica del fabricante de cada uno de los elementos que se van a utilizar en el sistema de postensado.
                   </p>
@@ -1095,9 +1094,9 @@ export default function Inspeccion() {
                 </div>
                 <div className="form-group">
                   <label>2.3 ¿Se almacenan correctamente los tendones?</label>
-                  <p>Critero de aceptacion:</p>
+                  <p>Criterio de aceptación:</p>
                   <p className="blueCriterio">
-                  No existen datos de corrosión o deformaciones. 
+                  No existe evidencia de corrosión o deformaciones. 
                   </p>
                   <select
                     name="tendonesAlmacenados"
@@ -1120,9 +1119,9 @@ export default function Inspeccion() {
                     estado los elementos de anclaje?
                   </label>
 
-                  <p>Critero de aceptacion:</p>
+                  <p>Criterio de aceptación:</p>
                   <p className="blueCriterio">
-                  No presentan golpes, oxido, suciedad o algun tipo de daño. 
+                  No presentan golpes, óxido, suciedad o algún tipo de daño. 
                   </p>
                   <select
                     name="anclajesEstado"
@@ -1144,9 +1143,9 @@ export default function Inspeccion() {
                     2.5 ¿Se tiene la cantidad y ubicación correcta de los
                     tendones?
                   </label>
-                  <p>Critero de aceptacion:</p>
+                  <p>Criterio de aceptación:</p>
                   <p className="blueCriterio">
-                  Se encuentran ubicados según las indicaciones del diseño, para impartir las fuerzas de pretensado deseadas.  Permitiendo una desviacción máxima de 12 pulg (305mm) según lo indica el PTI.
+                  Se encuentran ubicados según las indicaciones del diseño, para impartir las fuerzas de tensado deseadas.  Permitiendo una desviación máxima de 12 pulg (305mm) según lo indica el PTI.
                   </p>
                   <select
                     name="tendonesCantidad"
@@ -1169,12 +1168,12 @@ export default function Inspeccion() {
                     contemplando los puntos altos y bajos de los tendones antes
                     de la colocación del concreto?
                   </label>
-                  <p>Critero de aceptacion:</p>
+                  <p>Criterio de aceptación:</p>
                   <p className="blueCriterio">
                   Según indicaciones de diseño, manteniendo una tolerancia máxima de: 
 Profundidades de losas hasta 8 pulgadas (200mm): +-1 1/2pulg (6mm).
 Profundidades de losas entre 8 pulgadas (200mm) y 24 pulgadas (610mm): +-3/8 de pulg (9mm).
-Profundidades de losas superiora 24 pulgadas (610mm): +- 1/2 de pulg (13mm).
+Profundidades de losas superior a 24 pulgadas (610mm): +- 1/2 de pulg (13mm).
                   </p>
                   <select
                     name="tendonesCurvatura"
@@ -1195,9 +1194,9 @@ Profundidades de losas superiora 24 pulgadas (610mm): +- 1/2 de pulg (13mm).
                   <label>
                     2.7 ¿Estan fijados los anclajes de manera correcta?
                   </label>
-                  <p>Critero de aceptacion:</p>
+                  <p>Criterio de aceptación:</p>
                   <p className="blueCriterio">
-                  Se encuentran fijados de manera perpendicular al encofrado del borde de la losa, garantizando la fijacion de este. 
+                  Se encuentran fijados de manera perpendicular al encofrado del borde de la losa, garantizando la fijación de este. 
                   </p>
                   <select
                     name="anclajesFijados"
@@ -1219,7 +1218,7 @@ Profundidades de losas superiora 24 pulgadas (610mm): +- 1/2 de pulg (13mm).
                     2.8 ¿Se cortó correctamente el revestimiento en los extremos
                     de tensado?
                   </label>
-                  <p>Critero de aceptacion:</p>
+                  <p>Criterio de aceptación:</p>
                   <p className="blueCriterio">
                   El cable expuesto en la parte posterior al anclaje, mide menos de 1" o según lo indique el diseñador en planos. 
                   </p>
@@ -1243,7 +1242,7 @@ Profundidades de losas superiora 24 pulgadas (610mm): +- 1/2 de pulg (13mm).
                     2.9 ¿Se tiene refuerzos para cortante por punzonamiento en
                     las interacciones losa-columna?
                   </label>
-                  <p>Critero de aceptacion:</p>
+                  <p>Criterio de aceptación:</p>
                   <p className="blueCriterio">
                   Según diseño y de acuerdo a lo especificado por el ACI 318. Reforzando como mínimo una sección crítica correspondiente al cuadrante que bordea el périmetro de la columna, el cual se debe alejar una distancia de d/2 de cada cara de la columna. Y los valores de cortante y momento que actuan sobre dicha sección están limitados por los valores permisibles que indica el ACI 318S-11.
                   </p>
@@ -1266,7 +1265,7 @@ Profundidades de losas superiora 24 pulgadas (610mm): +- 1/2 de pulg (13mm).
                   <label>
                     2.10 ¿Se tiene adecuado espacio para equipo de tensado?
                   </label>
-                  <p>Critero de aceptacion:</p>
+                  <p>Criterio de aceptación:</p>
                   <p className="blueCriterio">
                   Se tiene suficiente espacio para el equipo que se utilizará para el tensado de los tendones, para esto se debe de revisar la ficha técnica de dicho quipo y verificar las dimensiones del mismo. 
                   </p>
@@ -1289,9 +1288,9 @@ Profundidades de losas superiora 24 pulgadas (610mm): +- 1/2 de pulg (13mm).
                   <label>
                     2.11 ¿Presenta daños el revestimiento de los tendones?
                   </label>
-                  <p>Critero de aceptacion:</p>
+                  <p>Criterio de aceptación:</p>
                   <p className="blueCriterio">
-                  El revestimiento no presenta daños o en caso de presentar estos fueron reparados de manera correcta garantizando ue no enre concreto dentro de dicho revestimiento durante el proceso de colado. 
+                  El revestimiento no presenta daños o en caso de presentar estos fueron reparados de manera correcta garantizando que no entre concreto dentro de dicho revestimiento durante el proceso de colado. 
                   </p>
                   <select
                     name="tendonesRevestimiento"
@@ -1312,9 +1311,9 @@ Profundidades de losas superiora 24 pulgadas (610mm): +- 1/2 de pulg (13mm).
                   <label>
                     2.12 ¿Se colocó anticorrosivo en el extremo de tensado?
                   </label>
-                  <p>Critero de aceptacion:</p>
+                  <p>Criterio de aceptación:</p>
                   <p className="blueCriterio">
-                  El extremo de tensado tiene anticorrosvo con textura uniforme y cubriendo la totalidad del cable expuesto, para evitar su corrosión. 
+                  El extremo de tensado tiene anticorrosivo con textura uniforme y cubriendo la totalidad del cable expuesto, para evitar su corrosión. 
                   </p>
                   <select
                     name="anticorrosivoExtremo"
@@ -1336,7 +1335,7 @@ Profundidades de losas superiora 24 pulgadas (610mm): +- 1/2 de pulg (13mm).
                     2.13 ¿Se enuentra marcado en el encofrado la ubicación de
                     los tendones?
                   </label>
-                  <p>Critero de aceptacion:</p>
+                  <p>Criterio de aceptación:</p>
                   <p className="blueCriterio">
                   Se recomienda marcar en el encofrado de fondo la ubicación de los tendones, para el caso de que sea requerido posteriormente como referencia. Para esto se puede utilizar por ejemplo pintura en spray. 
                   </p>
@@ -1360,9 +1359,9 @@ Profundidades de losas superiora 24 pulgadas (610mm): +- 1/2 de pulg (13mm).
                   <label>
                     3.1 ¿El método de colocación del concreto es el adecuado?
                   </label>
-                  <p>Critero de aceptacion:</p>
+                  <p>Criterio de aceptación:</p>
                   <p className="blueCriterio">
-                  Se tiene claro el metodo de colocación de concreto (con bomba, con grua, etc) que previamente ha sido aprovado por el diseñador y garantizando que no provoque daño la ubicación de los tendones, por ejemplo, indicando la ubicación de vaciado del balde de la grúa. 
+                  Se tiene claro el metodo de colocación de concreto (con bomba, con grúa, etc) que previamente ha sido aprobado por el diseñador y garantizando que no provoque daño a la ubicación de los tendones, por ejemplo, indicando la ubicación de vaciado del balde de la grúa. 
                   </p>
                   <select
                     name="metodoColocacionConcreto"
@@ -1380,7 +1379,7 @@ Profundidades de losas superiora 24 pulgadas (610mm): +- 1/2 de pulg (13mm).
                 </div>
                 <div className="form-group">
                   <label>3.2 ¿El encofrado está adecuadamente lubricado?</label>
-                  <p>Critero de aceptacion:</p>
+                  <p>Criterio de aceptación:</p>
                   <p className="blueCriterio">
                   Se le aplicó desmoldante a los paneles de encofrado para su posterior desprendimiento de la losa. 
                   </p>
@@ -1400,7 +1399,7 @@ Profundidades de losas superiora 24 pulgadas (610mm): +- 1/2 de pulg (13mm).
                 </div>
                 <div className="form-group">
                   <label>3.3 ¿El concreto utilizado es el correcto?</label>
-                  <p>Critero de aceptacion:</p>
+                  <p>Criterio de aceptación:</p>
                   <p className="blueCriterio">
                   Sin presencia de cloruro de calcio u otros aditivos que generen efectos negativos sobre el acero. 
                   </p>
@@ -1423,9 +1422,9 @@ Profundidades de losas superiora 24 pulgadas (610mm): +- 1/2 de pulg (13mm).
                     3.4 ¿Se está utilizando el equipo vibrador de manera
                     adecuada?
                   </label>
-                  <p>Critero de aceptacion:</p>
+                  <p>Criterio de aceptación:</p>
                   <p className="blueCriterio">
-                  Se utilizó el vibrador a lo largo de toda la losa, evitando que este entre en contacto con los tendones o con el acero de refuerzo cuando se tiene. 
+                  Se utilizó el vibrador a lo largo de toda la losa, evitando que este entre en contacto con los tendones o con el acero de refuerzo. 
                   </p>
                   <select
                     name="equipoVibrador"
@@ -1443,9 +1442,9 @@ Profundidades de losas superiora 24 pulgadas (610mm): +- 1/2 de pulg (13mm).
                 </div>
                 <div className="form-group">
                   <label>3.5 ¿El vibrador utilizado es el adecuado?</label>
-                  <p>Critero de aceptacion:</p>
+                  <p>Criterio de aceptación:</p>
                   <p className="blueCriterio">
-                  Garantizar que se tenga un minimo de dos vibradores de concreto, asñi como el equipo necesario para la debida colocación de este. 
+                  Garantizar que se tenga un mínimo de dos vibradores de concreto, así como el equipo necesario para la debida colocación de este. 
                   </p>
                   <select
                     name="vibradorUtilizado"
@@ -1468,7 +1467,7 @@ Profundidades de losas superiora 24 pulgadas (610mm): +- 1/2 de pulg (13mm).
                     4.1 ¿Se alcanzó la resistencia del concreto
                     especificada,antes de iniciar el tensado?
                   </label>
-                  <p>Critero de aceptacion:</p>
+                  <p>Criterio de aceptación:</p>
                   <p className="blueCriterio">
                   No comenzar hasta que el concreto haya alcanzado la resistencia adecuada según las especificaciones del diseño (Generalmente alrededor de 3000psi). Comprobable mediante pruebas de laboratorio. 
                   </p>
@@ -1491,7 +1490,7 @@ Profundidades de losas superiora 24 pulgadas (610mm): +- 1/2 de pulg (13mm).
                     4.2 ¿El equipo de tensado se encuentra correctamente
                     calibrado?
                   </label>
-                  <p>Critero de aceptacion:</p>
+                  <p>Criterio de aceptación:</p>
                   <p className="blueCriterio">
                   Se encuentra correctamente calibrado. 
                   </p>
@@ -1511,9 +1510,9 @@ Profundidades de losas superiora 24 pulgadas (610mm): +- 1/2 de pulg (13mm).
                 </div>
                 <div className="form-group">
                   <label>4.3 ¿Las cuñas a utilizar están en buen estado?</label>
-                  <p>Critero de aceptacion:</p>
+                  <p>Criterio de aceptación:</p>
                   <p className="blueCriterio">
-                  Se utilizan cuñas nuevas, sin deformaciones en los dientes, sin oxido y con calidad homogenea. 
+                  Se utilizan cuñas nuevas, sin deformaciones en los dientes, sin óxido y con calidad homogénea. 
                   </p>
                   <select
                     name="cunasEstado"
@@ -1531,9 +1530,9 @@ Profundidades de losas superiora 24 pulgadas (610mm): +- 1/2 de pulg (13mm).
                 </div>
                 <div className="form-group">
                   <label>4.4 ¿Se tienen las marcas de elongación?</label>
-                  <p>Critero de aceptacion:</p>
+                  <p>Criterio de aceptación:</p>
                   <p className="blueCriterio">
-                  Se pintaron las marcas de la elongacion que se debe realizar, en cada uno de los extremos de los tendones de la losa
+                  Se pintaron las marcas de la elongación que se debe realizar, en cada uno de los extremos de los tendones de la losa.
                   </p>
                   <select
                     name="marcasElongacion"
@@ -1553,7 +1552,7 @@ Profundidades de losas superiora 24 pulgadas (610mm): +- 1/2 de pulg (13mm).
                   <label>
                     4.5 ¿Se tiene visto bueno de la secuencia de tensado?
                   </label>
-                  <p>Critero de aceptacion:</p>
+                  <p>Criterio de aceptación:</p>
                   <p className="blueCriterio">
                   El ingeniero estructural a cargo revisó y aprobó la secuencia de tensado. 
                   </p>
@@ -1577,9 +1576,9 @@ Profundidades de losas superiora 24 pulgadas (610mm): +- 1/2 de pulg (13mm).
                     4.6 ¿Se cumple con la elongación requerida para los tendones
                     después de tensado?
                   </label>
-                 <p>Critero de aceptacion:</p>
+                  <p>Criterio de aceptación:</p>
                   <p className="blueCriterio">
-                  Según diseño, midiendo a 1/8 de pulgada mas cercano, con una tolerancia máxima de +-7% . .
+                  Según diseño, midiendo a 1/8 de pulgada mas cercano, con una tolerancia máxima de +-7%.
                   </p>
                  
                   <select

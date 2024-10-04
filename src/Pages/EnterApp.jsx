@@ -44,7 +44,7 @@ const EnterApp = () => {
             Esta página web forma parte del proyecto final de graduación del
             estudiante <strong>Brayan Alpízar Carvajal, cedula 2-0798-0990, estudiante
             de la carrera de Ingeniería Civil de la Universidad de Costa Rica.</strong><br></br>
-            Los derechos de autor de la presente pagina y sus resultados son
+            Los derechos de autor de la presente página y sus resultados son
             compartidos con los siguientes ingenieros miembros del comité
             asesor. <br></br>
             <strong>Director: Ing. Allan Rojas Ramírez Asesor: Robert Anglin
