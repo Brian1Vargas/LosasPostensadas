@@ -111,7 +111,7 @@ export default function CrearInspeccionView() {
             >
                 <h2>Seleccionar Tipo de Inspección</h2>
                 <button onClick={() => goToFormulario('adherido')}>Formulario Adherido</button>
-                <button onClick={() => goToFormulario('deshaderido')}>Formulario Deshaderido</button>
+                <button onClick={() => goToFormulario('deshaderido')}>Formulario Des-adherido</button>
                 <button onClick={closeModal}>Cancelar</button>
             </Modal>
         </>

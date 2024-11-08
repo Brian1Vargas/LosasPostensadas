@@ -137,7 +137,7 @@ export default function CrearProyecto() {
                 required
               >
                 <option value="adherido">Adherido</option>
-                <option value="desadherido">Desadherido</option>
+                <option value="desadherido">Des-adherido</option>
               </select>
             </div>
             <button type="submit" className="btn-submit">

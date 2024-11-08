@@ -15,9 +15,11 @@ export default function Home() {
             componentes de este sistema.
           </p>
           <p>
-            Utilizando esta herramienta, podrás llevar a cabo inspecciones
-            detalladas, registrar observaciones y generar reportes de manera
-            eficiente.
+          Cedo los derechos de actualización de este trabajo a la Universidad de Costa Rica para fines académicos, 
+          de docencia, investigación, acción social y divulgación. 
+          Ni la Universidad de Costa Rica, ni los miembros del comité asesor, 
+          ni ninguna persona que haya participado en la elaboración de este proyecto, 
+          se hacen responsables del uso de la información proporcionada en esta página.
           </p>
        
         </div>
